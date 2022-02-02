@@ -1,3 +1,5 @@
+// Modified by Jorge Ezequiel Garcia Lopez
+// Student ID: 200863135
 import java.awt.Color;
 import java.awt.Graphics;
 import java.util.Random;
@@ -60,5 +62,4 @@ public class LiningPanel extends javax.swing.JPanel {
         }
 
     }
-    
 }
