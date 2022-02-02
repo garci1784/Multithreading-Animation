@@ -1,4 +1,7 @@
 import javax.swing.JFrame;
+import javax.swing.JButton;
+import javax.awt.FlowLayout;
+import javax.awt.event.ActionListener;
 
 public class LineDrawingTest {
 
@@ -9,6 +12,12 @@ public class LineDrawingTest {
         JFrame application = new JFrame();
         // creates the object to paint the lines
         LiningPanel panel = new LiningPanel();
+        // Creates the button
+        LiningPanel Buttonp = new LiningPanel();
+        Buttonp.setLayout(new FlowLayout());
+        JButton sButton = new JButton("Start");
+        sButton.addActionListener(this);
+        
 
         // how to exit
         application.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
