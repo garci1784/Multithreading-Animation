@@ -1,4 +1,5 @@
-import javax.swing.JFrame;
+import javax.swing.*;
+import java.awt.*;
 
 public class LineDrawingTest {
 
@@ -9,6 +10,7 @@ public class LineDrawingTest {
         JFrame application = new JFrame();
         // creates the object to paint the lines
         LiningPanel panel = new LiningPanel();
+        Animator animator = new Animator(panel);
 
         // how to exit
         application.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -20,5 +22,8 @@ public class LineDrawingTest {
         application.setTitle("Lining Art");
         // makes the frame visible
         application.setVisible(true);
+        // Starts a new animation thread
+        Thread t = new Thread(animator);
+        t.start();
     }
 }
